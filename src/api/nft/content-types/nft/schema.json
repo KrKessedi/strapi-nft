@@ -4,7 +4,8 @@
   "info": {
     "singularName": "nft",
     "pluralName": "nfts",
-    "displayName": "nft"
+    "displayName": "nft",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,14 +13,35 @@
   "pluginOptions": {},
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "titile": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "default": 0
+    },
+    "comments": {
+      "type": "json"
+    },
+    "category": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
