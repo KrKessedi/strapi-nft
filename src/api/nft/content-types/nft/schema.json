@@ -23,7 +23,7 @@
         "audios"
       ]
     },
-    "titile": {
+    "title": {
       "type": "string",
       "required": true
     },
